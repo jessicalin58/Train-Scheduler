@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Train Scheduler
+	</title>
+
+ <!--Google Icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+ <link rel="stylesheet" href="assets/css/style.css">
+
+ <!-- Compiled and minified CSS MATERIALIZED -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+ <!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+ <!-- Moment.js Reference -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+<div class="row"> 
+	
+	<div class="col s12"> 
+					  <div class="slider">
+					    <ul class="slides">
+					      <li>
+					        <img src="http://foggedclarity.com/wp-content/uploads/2014/10/Trainstation.jpg"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Anytime is (almost) train time</h3>
+					          <h5 class="light grey-text text-lighten-3">Track your train</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="http://sittard365.com/wp-content/uploads/2014/02/102-Sunset-At-Train-Station-Sittard1.jpg"> <!-- random image -->
+					        <div class="caption left-align">
+					          <h3>Trains coming from everywhere</h3>
+					          <h5 class="light grey-text text-lighten-3">From all directions</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="http://static-v3d.raileurope-world.com/local/cache-vignettes/L760xH570/austria-salzburg_hauptbahnhof_station-_c_jack_amick_flickr-no_commercial_use-7352423746-8c029.jpg"> <!-- random image -->
+					        <div class="caption right-align">
+					          <h3>Up and Down</h3>
+					          <h5 class="light grey-text text-lighten-3">Below the curtains</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="https://media.architecturaldigest.com/photos/56fe94952733b4f01485ce23/master/pass/train-stations-graz_08.jpg"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Under the carpet</h3>
+					          <h5 class="light grey-text text-lighten-3">Within your books</h5>
+					        </div>
+					      </li>
+					    </ul>
+					  </div>
+			</div>
+		 
+
+	<div class="col s12">
+		<table id='train-table'>
+			<thead>
+
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency(min)</th>
+					<th>Next Arrival</th>
+					<th>Minutes Away</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="col s12">
+		
+		<div class="input-field col s6">
+			<i class="material-icons prefix">train</i>
+			<input id="train-name-input" type="text" class="validade">
+			<label for="icon-prefix">Train Name</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">add_location</i>
+			<input id="train-destination-input" type="text" class="validade">
+			<label for="icon-prefix">Destination</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">access_time</i>
+			<input id="train-time-input" type="text" class="validade">
+			<label for="icon-prefix">First Train Time(HH:mm - military time)</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">repeat</i>
+			<input id="train-frequency-input" type="text" class="validade">
+			<label for="icon-prefix">Frequency(min)</label>
+		</div>
+
+		<button class="btn waves-effect waves-light" id="add-train-btn"type="submit" name="action">Submit
+		    <i class="material-icons right">send</i>
+		  </button>
+
+	</div>
+
+</div>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/app.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+</body>
+</html>
